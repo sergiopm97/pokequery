@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.pokemon-logo {
+  height: 50%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 0rem 2rem 0rem 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2F2F2F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7.5rem;
+  top: 0;
+}
+
+header ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+header ul li {
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+header ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid #FFFFFF;
+}
+/*# sourceMappingURL=main.css.map */
