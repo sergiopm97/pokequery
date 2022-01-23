@@ -56,12 +56,20 @@
   border: 0.5rem solid #6390F0;
 }
 
+#electric {
+  border: 0.5rem solid #F7D02C;
+}
+
 #grass {
   border: 0.5rem solid #7AC74C;
 }
 
 #ice {
   border: 0.5rem solid #96D9D6;
+}
+
+#fighting {
+  border: 0.5rem solid #C22E28;
 }
 
 #poison {
