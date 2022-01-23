@@ -2,6 +2,112 @@
   height: 50%;
 }
 
+.pokemons {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2.5rem;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  margin: 2.5rem;
+}
+
+.pokemon-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1rem;
+  background-color: #2F2F2F;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.pokemon-id {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.pokemon-image {
+  width: 45%;
+  height: 45%;
+}
+
+.pokemon-name {
+  color: white;
+}
+
+#normal {
+  border: 0.5rem solid #A8A77A;
+}
+
+#fire {
+  border: 0.5rem solid #EE8130;
+}
+
+#water {
+  border: 0.5rem solid #6390F0;
+}
+
+#grass {
+  border: 0.5rem solid #7AC74C;
+}
+
+#ice {
+  border: 0.5rem solid #96D9D6;
+}
+
+#poison {
+  border: 0.5rem solid #A33EA1;
+}
+
+#ground {
+  border: 0.5rem solid #E2BF65;
+}
+
+#flying {
+  border: 0.5rem solid #A98FF3;
+}
+
+#psychic {
+  border: 0.5rem solid #F95587;
+}
+
+#bug {
+  border: 0.5rem solid #A6B91A;
+}
+
+#rock {
+  border: 0.5rem solid #B6A136;
+}
+
+#ghost {
+  border: 0.5rem solid #735797;
+}
+
+#dragon {
+  border: 0.5rem solid #6F35FC;
+}
+
+#dark {
+  border: 0.5rem solid #705746;
+}
+
+#steel {
+  border: 0.5rem solid #B7B7CE;
+}
+
+#fairy {
+  border: 0.5rem solid #D685AD;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
