@@ -122,6 +122,7 @@ body {
 }
 
 header {
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
