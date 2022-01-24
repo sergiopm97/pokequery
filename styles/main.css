@@ -13,107 +13,404 @@
 
 .pokemon-card {
   width: 100%;
+  position: relative;
+  border-radius: 1rem;
+  background-color: #2F2F2F;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  height: 25rem;
+}
+
+.pokemon-content {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 1rem;
-  background-color: #2F2F2F;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  margin: auto;
+  width: 100%;
 }
 
 .pokemon-id {
+  left: 0;
+  position: absolute;
+  border-radius: 0.4rem 0rem 0.4rem 0rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #000000;
+  margin: 0;
 }
 
 .pokemon-image {
-  width: 45%;
-  height: 45%;
+  width: 60%;
+  height: 60%;
 }
 
 .pokemon-name {
   color: white;
+  margin-bottom: 0;
 }
 
-#normal {
+.pokemon-type--1 {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 0.4rem 0rem 0.4rem 0rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+#normal--card {
   border: 0.5rem solid #A8A77A;
+  -webkit-box-shadow: 0px 0px 0px 0px #A8A77A;
+          box-shadow: 0px 0px 0px 0px #A8A77A;
 }
 
-#fire {
+#normal--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #A8A77A;
+          box-shadow: 0px 0px 0px 5px #A8A77A;
+}
+
+#fire--card {
   border: 0.5rem solid #EE8130;
+  -webkit-box-shadow: 0px 0px 0px 0px #EE8130;
+          box-shadow: 0px 0px 0px 0px #EE8130;
 }
 
-#water {
+#fire--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #EE8130;
+          box-shadow: 0px 0px 0px 5px #EE8130;
+}
+
+#water--card {
   border: 0.5rem solid #6390F0;
+  -webkit-box-shadow: 0px 0px 0px 0px #6390F0;
+          box-shadow: 0px 0px 0px 0px #6390F0;
 }
 
-#electric {
+#water--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #6390F0;
+          box-shadow: 0px 0px 0px 5px #6390F0;
+}
+
+#electric--card {
   border: 0.5rem solid #F7D02C;
+  -webkit-box-shadow: 0px 0px 0px 0px #F7D02C;
+          box-shadow: 0px 0px 0px 0px #F7D02C;
 }
 
-#grass {
+#electric--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #F7D02C;
+          box-shadow: 0px 0px 0px 5px #F7D02C;
+}
+
+#grass--card {
   border: 0.5rem solid #7AC74C;
+  -webkit-box-shadow: 0px 0px 0px 0px #7AC74C;
+          box-shadow: 0px 0px 0px 0px #7AC74C;
 }
 
-#ice {
+#grass--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #7AC74C;
+          box-shadow: 0px 0px 0px 5px #7AC74C;
+}
+
+#ice--card {
   border: 0.5rem solid #96D9D6;
+  -webkit-box-shadow: 0px 0px 0px 0px #96D9D6;
+          box-shadow: 0px 0px 0px 0px #96D9D6;
 }
 
-#fighting {
+#ice--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #96D9D6;
+          box-shadow: 0px 0px 0px 5px #96D9D6;
+}
+
+#fighting--card {
   border: 0.5rem solid #C22E28;
+  -webkit-box-shadow: 0px 0px 0px 0px #C22E28;
+          box-shadow: 0px 0px 0px 0px #C22E28;
 }
 
-#poison {
+#fighting--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #C22E28;
+          box-shadow: 0px 0px 0px 5px #C22E28;
+}
+
+#poison--card {
   border: 0.5rem solid #A33EA1;
+  -webkit-box-shadow: 0px 0px 0px 0px #A33EA1;
+          box-shadow: 0px 0px 0px 0px #A33EA1;
 }
 
-#ground {
+#poison--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #A33EA1;
+          box-shadow: 0px 0px 0px 5px #A33EA1;
+}
+
+#ground--card {
   border: 0.5rem solid #E2BF65;
+  -webkit-box-shadow: 0px 0px 0px 0px #E2BF65;
+          box-shadow: 0px 0px 0px 0px #E2BF65;
 }
 
-#flying {
+#ground--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #E2BF65;
+          box-shadow: 0px 0px 0px 5px #E2BF65;
+}
+
+#flying--card {
   border: 0.5rem solid #A98FF3;
+  -webkit-box-shadow: 0px 0px 0px 0px #A98FF3;
+          box-shadow: 0px 0px 0px 0px #A98FF3;
 }
 
-#psychic {
+#flying--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #A98FF3;
+          box-shadow: 0px 0px 0px 5px #A98FF3;
+}
+
+#psychic--card {
   border: 0.5rem solid #F95587;
+  -webkit-box-shadow: 0px 0px 0px 0px #F95587;
+          box-shadow: 0px 0px 0px 0px #F95587;
 }
 
-#bug {
+#psychic--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #F95587;
+          box-shadow: 0px 0px 0px 5px #F95587;
+}
+
+#bug--card {
   border: 0.5rem solid #A6B91A;
+  -webkit-box-shadow: 0px 0px 0px 0px #A6B91A;
+          box-shadow: 0px 0px 0px 0px #A6B91A;
 }
 
-#rock {
+#bug--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #A6B91A;
+          box-shadow: 0px 0px 0px 5px #A6B91A;
+}
+
+#rock--card {
   border: 0.5rem solid #B6A136;
+  -webkit-box-shadow: 0px 0px 0px 0px #B6A136;
+          box-shadow: 0px 0px 0px 0px #B6A136;
 }
 
-#ghost {
+#rock--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #B6A136;
+          box-shadow: 0px 0px 0px 5px #B6A136;
+}
+
+#ghost--card {
   border: 0.5rem solid #735797;
+  -webkit-box-shadow: 0px 0px 0px 0px #735797;
+          box-shadow: 0px 0px 0px 0px #735797;
 }
 
-#dragon {
+#ghost--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #735797;
+          box-shadow: 0px 0px 0px 5px #735797;
+}
+
+#dragon--card {
   border: 0.5rem solid #6F35FC;
+  -webkit-box-shadow: 0px 0px 0px 0px #6F35FC;
+          box-shadow: 0px 0px 0px 0px #6F35FC;
 }
 
-#dark {
+#dragon--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #6F35FC;
+          box-shadow: 0px 0px 0px 5px #6F35FC;
+}
+
+#dark--card {
   border: 0.5rem solid #705746;
+  -webkit-box-shadow: 0px 0px 0px 0px #705746;
+          box-shadow: 0px 0px 0px 0px #705746;
 }
 
-#steel {
+#dark--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #705746;
+          box-shadow: 0px 0px 0px 5px #705746;
+}
+
+#steel--card {
   border: 0.5rem solid #B7B7CE;
+  -webkit-box-shadow: 0px 0px 0px 0px #B7B7CE;
+          box-shadow: 0px 0px 0px 0px #B7B7CE;
 }
 
-#fairy {
+#steel--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #B7B7CE;
+          box-shadow: 0px 0px 0px 5px #B7B7CE;
+}
+
+#fairy--card {
   border: 0.5rem solid #D685AD;
+  -webkit-box-shadow: 0px 0px 0px 0px #D685AD;
+          box-shadow: 0px 0px 0px 0px #D685AD;
+}
+
+#fairy--card:hover {
+  -webkit-box-shadow: 0px 0px 0px 5px #D685AD;
+          box-shadow: 0px 0px 0px 5px #D685AD;
+}
+
+#normal--id {
+  background-color: #A8A77A;
+}
+
+#fire--id {
+  background-color: #EE8130;
+}
+
+#water--id {
+  background-color: #6390F0;
+}
+
+#electric--id {
+  background-color: #F7D02C;
+}
+
+#grass--id {
+  background-color: #7AC74C;
+}
+
+#ice--id {
+  background-color: #96D9D6;
+}
+
+#fighting--id {
+  background-color: #C22E28;
+}
+
+#poison--id {
+  background-color: #A33EA1;
+}
+
+#ground--id {
+  background-color: #E2BF65;
+}
+
+#flying--id {
+  background-color: #A98FF3;
+}
+
+#psychic--id {
+  background-color: #F95587;
+}
+
+#bug--id {
+  background-color: #A6B91A;
+}
+
+#rock--id {
+  background-color: #B6A136;
+}
+
+#ghost--id {
+  background-color: #735797;
+}
+
+#dragon--id {
+  background-color: #6F35FC;
+}
+
+#dark--id {
+  background-color: #705746;
+}
+
+#steel--id {
+  background-color: #B7B7CE;
+}
+
+#fairy--id {
+  background-color: #D685AD;
+}
+
+#normal--type {
+  background-color: #A8A77A;
+}
+
+#fire--type {
+  background-color: #EE8130;
+}
+
+#water--type {
+  background-color: #6390F0;
+}
+
+#electric--type {
+  background-color: #F7D02C;
+}
+
+#grass--type {
+  background-color: #7AC74C;
+}
+
+#ice--type {
+  background-color: #96D9D6;
+}
+
+#fighting--type {
+  background-color: #C22E28;
+}
+
+#poison--type {
+  background-color: #A33EA1;
+}
+
+#ground--type {
+  background-color: #E2BF65;
+}
+
+#flying--type {
+  background-color: #A98FF3;
+}
+
+#psychic--type {
+  background-color: #F95587;
+}
+
+#bug--type {
+  background-color: #A6B91A;
+}
+
+#rock--type {
+  background-color: #B6A136;
+}
+
+#ghost--type {
+  background-color: #735797;
+}
+
+#dragon--type {
+  background-color: #6F35FC;
+}
+
+#dark--type {
+  background-color: #705746;
+}
+
+#steel--type {
+  background-color: #B7B7CE;
+}
+
+#fairy--type {
+  background-color: #D685AD;
 }
 
 body {
