@@ -40,3 +40,19 @@ header ul li a {
         border-bottom: 0.1rem solid #FFFFFF;
     }
 }
+
+input {
+    width: 12rem;
+    height: 2rem;
+    color: #2F2F2F;
+    padding-left: 0.5rem;
+    border: 0.2rem solid #FFCB05;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+
+    &:focus {
+        outline: none;
+    }
+}

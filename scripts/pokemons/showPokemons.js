@@ -10,21 +10,17 @@ const showPokemons = (pokemons) => {
     for (let pokemon of pokemons) {
 
         let pokemonCard = document.createElement("div");
-        pokemonCard.className = "pokemon-card";
-
         let pokemonContent = document.createElement("div");
-        pokemonContent.className = "pokemon-content"
-
         let pokemonId = document.createElement("h1");
-        pokemonId.className = "pokemon-id";
-
         let pokemonImage = document.createElement("img");
-        pokemonImage.className = "pokemon-image";
-
         let pokemonName = document.createElement("h1");
-        pokemonName.className = "pokemon-name";
-
         let firstPokemonType = document.createElement("h3");
+
+        pokemonCard.className = "pokemon-card";
+        pokemonContent.className = "pokemon-content"
+        pokemonId.className = "pokemon-id";
+        pokemonImage.className = "pokemon-image";
+        pokemonName.className = "pokemon-name";
         firstPokemonType.className = "pokemon-type--1";
 
         pokemon.then(data => {
@@ -35,6 +31,7 @@ const showPokemons = (pokemons) => {
             firstPokemonType.textContent = data.types[0].type.name.charAt(0).toUpperCase() + data.types[0].type.name.slice(1);
             firstPokemonType.id = data.types[0].type.name + "--type";
             pokemonCard.id = data.types[0].type.name + "--card";
+            pokemonCard.className += " " + data.name;
         })
 
         pokemonContent.appendChild(pokemonImage);
