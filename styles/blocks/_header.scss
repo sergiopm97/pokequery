@@ -1,3 +1,7 @@
 .pokemon-logo {
     height: 50%;
+
+    @include responsive(mobile) {
+        height: 35%;
+    }
 }
