@@ -2,6 +2,12 @@
   height: 50%;
 }
 
+@media screen and (max-width: 750px) {
+  .pokemon-logo {
+    height: 35%;
+  }
+}
+
 .pokemons {
   display: -ms-grid;
   display: grid;
@@ -9,6 +15,13 @@
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   margin: 2.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  .pokemons {
+    -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
 }
 
 .pokemon-card {
@@ -445,6 +458,12 @@ header ul {
   padding: 0;
 }
 
+@media screen and (max-width: 750px) {
+  header ul {
+    display: none;
+  }
+}
+
 header ul li {
   color: white;
   font-weight: 400;
@@ -476,5 +495,12 @@ input {
 
 input:focus {
   outline: none;
+}
+
+@media screen and (max-width: 750px) {
+  input {
+    width: 8rem;
+    height: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,4 @@
+@import "utilities/responsive";
 @import "blocks/header";
 @import "blocks/pokemons";
 
@@ -22,6 +23,10 @@ header ul {
     list-style-type: none;
     display: flex;
     padding: 0;
+
+    @include responsive(mobile) {
+        display: none;
+    }
 }
 
 header ul li {
@@ -54,5 +59,10 @@ input {
 
     &:focus {
         outline: none;
+    }
+
+    @include responsive(mobile) {
+        width: 8rem;
+        height: 2rem;
     }
 }
